@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: chartreuse;
+    text-align: center;
+}
+
+.name{
+    color: brown;
+    font-weight: bolder;
+}
+
+.name1{
+    border: 1px solid white;
+    width: 20%;
+}
+
+.tel{
+    color: brown;
+    font-weight: bolder;
+}
+
+.tel1{
+    border: 1px solid white;
+    width: 20%;
+}
+
+.mail{
+    color: brown;
+    font-weight: bolder;
+}
+
+.mail1{
+    border: 1px solid white;
+    width: 20%;
+}
+
+.place{
+    color: brown;
+    font-weight: bolder;
+}
+
+.place1{
+    border: 1px solid white;
+    width: 30%;
+    font-size: 20px;
+}
+
+.subject{
+    color: brown;
+    font-weight: bolder;
+}
+
+.subject1{
+    border: 1px solid white;
+    width: 30%;
+    font-size: 20px;
+}
+
+.content{
+    color: brown;
+    font-weight: bolder;
+}
+
+.content1{
+    border: 1px solid white;
+    font-size: 15px;
+}
+
+
+.submit{
+    color: navy;
+    font-weight: bold;
+    font-size: 20px;
+}

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./check.php">
   <title>沖縄観光</title>
 </head>
 
@@ -106,6 +107,15 @@
   </div>
   <br>
   <br>
+  <h4>
+    観光に関するお問い合わせは下記のサイトからご連絡下さい。
+  </h4>
+  <div class="link">
+    <div class="koko">
+      ↓ここへ！
+    </div>
+    <a href="./check.php">次へ</a>
+  </div>
 
   <footer>
     <div class="footer">Copyright © okinawa Inc.</div>
