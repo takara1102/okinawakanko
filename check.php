@@ -46,7 +46,12 @@
     </div>
     <br>
     <input type="submit" value="送信" class="submit">
+
   </form>
+  <br>
+
+  <a href="./index.php">トップページ</a>
+
 </body>
 
 </html>
