@@ -37,9 +37,10 @@ $content = $_POST['content'];
         <input type="hidden" name="subject" value="<?php echo $subject; ?>">
         <input type="hidden" name="content" value="<?php echo $content; ?>">
         <input type="submit" value="次へ進む" class="submit">
-        <form action="./check.php" method="POST">
-            <input type="submit" value="戻る" class="back">
-        </form>
+    </form>
+    <br>
+    <form action="./check.php" method="POST">
+        <input type="submit" value="戻る" class="back">
     </form>
 
 
