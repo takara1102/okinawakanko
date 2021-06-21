@@ -48,9 +48,8 @@
   <div class="chatan">
     <img src="./img/amerika.jpeg" alt="北谷" class="amerika">
   </div>
-
-
-  <br>
+  <span class="hp"> <a href="https://www.okinawa-americanvillage.com/">ホームページ</a>
+  </span>
 
 
   <h3 class="test3">
@@ -69,9 +68,10 @@
   <div class="okinawsi">
     <img src="./img/music.jpeg" alt="" class="amerika">
   </div>
+  <span class="hp">
+    <a href="https://kozamusictown.com/">ホームページ</a>
+  </span>
 
-  <br>
-  <br>
   <h3 class="test3">
     海中道路
   </h3>
@@ -86,9 +86,9 @@
     <img src="./img/kaityuu.jpg" alt="海中道路" class="amerika">
 
   </div>
-  <br>
-  <br>
-
+  <span class="hp">
+    <a href="https://urumajikan.com/sea-road/">ホームページ</a>
+  </span>
   <h3 class="test3">
     謝苅公園
   </h3>
@@ -105,8 +105,9 @@
     <img src="./img/zya-garu.jpg" alt="謝苅" class="amerika">
 
   </div>
-  <br>
-  <br>
+  <span class="hp">
+    <a href="https://yakei.jp/japan/spot.php?i=syakari">ホームページ</a>
+  </span>
   <h4>
     観光に関するお問い合わせは下記のサイトからご連絡下さい。
   </h4>
