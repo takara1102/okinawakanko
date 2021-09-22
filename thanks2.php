@@ -6,6 +6,21 @@ $place = $_POST['place'];
 $subject = $_POST['subject'];
 $content = $_POST['content'];
 
+$dsn = 'mysql:dbname=okinawakanko;host=localhost';
+$user = 'root';
+$password = '';
+$dbh = new PDO($dsn, $user, $password);
+$dbh->query('SET NAMES utf8');
+
+
+$sql = 'INSERT INTO `utina-`(`name`, `tel`, `mail`, `place`, `subject`, `content`) VALUES ("'. $name.'", "'. $tel.'",  "'.$mail.'", "'. $place.'", "'. $subject.'", "'.$content.'")';
+
+$stmt = $dbh->prepare($sql);
+$stmt->execute();
+$dbh = null;
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -21,18 +36,18 @@ $content = $_POST['content'];
 
 <body>
     <br>
-        <a href="./index.php">トップページ</a>
+    <a href="./index.php">トップページ</a>
     <h1>お問い合わせ完了</h1>
     <div class="watta">
-    <img src="./img/onna.jpeg" alt="恩納村" class=>
-    <br>
-    <br>
-    <br>
-    <img src="./img/kingtacos.jpeg" alt="キンタコ" >
-    <br>
-    <br>
-    <br>
-    <img src="./img/eguti.jpeg" alt="栄口青年会" >
+        <img src="./img/onna.jpeg" alt="恩納村" class=>
+        <br>
+        <br>
+        <br>
+        <img src="./img/kingtacos.jpeg" alt="キンタコ">
+        <br>
+        <br>
+        <br>
+        <img src="./img/eguti.jpeg" alt="栄口青年会">
     </div>
     <br>
     <h2>お問い合わせありがとうございます</h2>
