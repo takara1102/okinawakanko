@@ -13,10 +13,10 @@ $stmt->execute();
 
 while (1) {
   $rec = $stmt->fetch(PDO::FETCH_ASSOC);
-  // fetch(), fetchAll() ⇨ 組み込み関数
-  // データベースのデータを配列に格納させる関数
-  // fetch ⇨ 1行
-  // fetchAll ⇨ データベース全ての行
+//   fetch(), fetchAll() ⇨ 組み込み関数
+//   データベースのデータを配列に格納させる関数
+//   fetch ⇨ 1行
+//   fetchAll ⇨ データベース全ての行
   if ($rec == false) {
     break;
   }
@@ -32,7 +32,12 @@ while (1) {
 
 $rec = $stmt->fetchAll(PDO::FETCH_ASSOC);
 foreach($rec as $ $record){
-  echo $record['id'];
+  echo $record['id'] . '<br>';
+  echo $record['name'] . '<br>';
+  echo $record['mail'] . '<br>';
+  echo $record['place'] . '<br>';
+  echo $record['subject'] . '<br>';
+  echo $record['content'] . '<br>';
 }
 
 

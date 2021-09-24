@@ -1,10 +1,10 @@
 <?php
-$name = $_POST['name'];
-$tel = $_POST['tel'];
-$mail = $_POST['mail'];
-$place = $_POST['place'];
-$subject = $_POST['subject'];
-$content = $_POST['content'];
+$name = htmlentities ($_POST['name']);
+$tel = htmlentities($_POST['tel']);
+$mail = htmlentities($_POST['mail']);
+$place = htmlentities($_POST['place']);
+$subject = htmlentities($_POST['subject']);
+$content = htmlentities($_POST['content']);
 
 ?>
 

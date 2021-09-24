@@ -1,10 +1,11 @@
 <?php
-$name = $_POST['name'];
-$tel = $_POST['tel'];
-$mail = $_POST['mail'];
-$place = $_POST['place'];
-$subject = $_POST['subject'];
-$content = $_POST['content'];
+$name = htmlentities ($_POST['name']);
+$tel = htmlentities($_POST['tel']);
+$mail = htmlentities($_POST['mail']);
+$place = htmlentities($_POST['place']);
+$subject = htmlentities($_POST['subject']);
+$content = htmlentities($_POST['content']);
+
 
 $dsn = 'mysql:dbname=okinawakanko;host=localhost';
 $user = 'root';
@@ -14,9 +15,9 @@ $dbh->query('SET NAMES utf8');
 
 
 $sql = 'INSERT INTO `utina-`(`name`, `tel`, `mail`, `place`, `subject`, `content`) VALUES ("'. $name.'", "'. $tel.'",  "'.$mail.'", "'. $place.'", "'. $subject.'", "'.$content.'")';
-
+$stmt = $dbh->prepare('INSERT INTO utina- SET name = ?, tel = ?,  mail = ?, place = ?, subject = ?, content = ?');
 $stmt = $dbh->prepare($sql);
-$stmt->execute();
+$stmt->execute([$name, $tel, $mail, $place, $subject, $content, ]);
 $dbh = null;
 
 
