@@ -15,7 +15,6 @@ $dbh->query('SET NAMES utf8');
 
 
 // $sql = 'INSERT INTO `utina-`(`name`, `tel`, `mail`, `place`, `subject`, `content`) VALUES ("'. $name.'", "'. $tel.'",  "'.$mail.'", "'. $place.'", "'. $subject.'", "'.$content.'")';
-// $stmt = $dbh->prepare('INSERT INTO utina- SET name = ?, tel = ?,  mail = ?, place = ?, subject = ?, content = ?');
 $sql = 'INSERT INTO `utina-` SET name = ?, tel = ?,  mail = ?, place = ?, subject = ?, content = ?';
 $stmt = $dbh->prepare($sql);
 $stmt->execute([$name, $tel, $mail, $place, $subject, $content, ]);
